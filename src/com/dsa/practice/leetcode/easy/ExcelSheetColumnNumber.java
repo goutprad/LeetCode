@@ -2,7 +2,7 @@ package com.dsa.practice.leetcode.easy;
 
 public class ExcelSheetColumnNumber {
     public static void main(String[] args) {
-        String title = "AB";
+        String title = "ZA";
         System.out.println(titleToNumber(title));
     }
     public static int titleToNumber(String title){
