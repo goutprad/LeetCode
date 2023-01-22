@@ -52,7 +52,7 @@ public class ValidParenthesisString {
 
 	public static void main(String[] args) {
 		ValidParenthesisString leet = new ValidParenthesisString();
-		String s = "(*()";
+		String s = "(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())";
 		System.out.println(leet.checkValidString(s));
 	}
 }
