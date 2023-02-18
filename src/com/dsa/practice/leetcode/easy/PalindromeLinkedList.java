@@ -89,8 +89,8 @@ public class PalindromeLinkedList {
 		PalindromeLinkedList palindrome = new PalindromeLinkedList();
 		palindrome.add(1);
 		palindrome.add(0);
+		palindrome.add(0);
 		palindrome.add(1);
-		//palindrome.add(1);
 		//palindrome.add(3);
 		palindrome.printLL(palindrome.head);
 		System.out.println(palindrome.isPalindrome(palindrome.head));

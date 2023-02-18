@@ -34,6 +34,27 @@ public class SumOfArray {
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
         System.out.println(Arrays.toString(res));
+        System.out.println(Arrays.toString(add(a, b)));
+    }
+
+    public static int[] add(int[] a, int[] b) {
+        int[] res = new int[Math.max(a.length, b.length) + 1];
+        int aLen = a.length - 1, bLen = b.length - 1, resLen = res.length-1, carry = 0;
+        while (aLen >= 0 || bLen >= 0) {
+            int num = carry;
+            if (aLen >= 0) {
+                num+=a[aLen--];
+            }
+            if (bLen >= 0) {
+                num += b[bLen--];
+            }
+            res[resLen--] = num%10;
+            carry = num/10;
+        }
+        if(carry != 0){
+            res[resLen] = carry;
+        }
+        return res;
     }
 
 }
